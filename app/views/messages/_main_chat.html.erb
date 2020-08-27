@@ -6,7 +6,8 @@
   </div>
   <div class="right-header">
     <div class="header-button">
-      <a href="#">チャットを終了する</a>
+      <%= link_to "チャットを終了する", room_path(@room), method: :delete %>
+      <% #rails routes roomsコントローラーのdestroyアクションに対応するPrefixは、room.削除するチャットルームを区別するために、定義している@roomを引数%>
     </div>
   </div>
 </div>
